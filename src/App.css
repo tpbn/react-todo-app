@@ -1,0 +1,157 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #4A90E2;
+  margin: 0;
+}
+
+.app-container {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 400px;
+}
+
+.title {
+  font-size: 1.8em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.task-input {
+  display: flex;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.task-input input {
+  flex: 1;
+  padding: 8px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.add-btn {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  background: #218838;
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin: 15px 0;
+}
+
+.filter-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.filter-btn.active {
+  background: #0056b3;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-item {
+  background: #e3f2fd;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.task-text {
+  flex: 1;
+  margin-left: 10px;
+}
+
+.task-checkbox {
+  cursor: pointer;
+}
+
+.task-actions {
+  display: flex;
+  gap: 5px;
+}
+
+.edit-btn {
+  background: #ffc107;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.edit-btn:hover {
+  background: #e0a800;
+}
+
+.delete-btn {
+  background: #dc3545;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  color: white;
+}
+
+.delete-btn:hover {
+  background: #c82333;
+}
+
+.task-completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.dark-mode {
+  background: #2c3e50;
+  color: white;
+}
+
+.dark-mode .app-container {
+  background: #34495e;
+  color: white;
+}
+
+.dark-mode .task-item {
+  background: #3b4a5a;
+}
+
+.toggle-btn {
+  background: #6c757d;
+  border: none;
+  padding: 8px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+}
+
+.toggle-btn:hover {
+  background: #5a6268;
+}
